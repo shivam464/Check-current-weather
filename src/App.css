@@ -1,38 +1,104 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+/* .App{
+  text-align: center;
+} */
+
+.form_div{
+  background-color: darkcyan;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form{
+  padding: 1rem 0rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user_input{
+  width:15rem ;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.5rem;
 }
+.button{
+  border-radius: 0.5rem;
+  padding: 0.5em;
+  background-color: rgb(108, 165, 219);
+  border: none;
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: rgba(37, 223, 192, 0.644);
+}
+.container{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.center_div{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.image_section{
+  width: 40rem;
+  text-align: center;
+  
+  overflow: hidden;
+}
+.image_section img{
+  width: 90%;
+}
+.weather_details{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+}
+.weather_details h2{
+  /* margin-top: 1rem; */
+  margin-left: 4rem;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.grid_section{
+
+  display: grid;
+  margin-top: 0.5rem;
+  grid-template-columns: repeat(2,1fr);
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.data_name p{
+  line-height: 3rem;
+  font-family: 'Assistant', sans-serif;
+}
+.data_value{
+  line-height: 3rem;
+  font-family: 'Assistant', sans-serif;
+}
+.city_name{
+  margin-left: 8rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+}
+.city_name span{
+color: aqua;
+}
+.error_div{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+}
+.error_div h1{
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
 }
