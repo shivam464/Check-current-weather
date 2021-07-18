@@ -16,7 +16,8 @@ const Main = () => {
         const response = await request
         setapi_data(response.data.current);
         setlocation(response.data.location.name)
-        e.target.reset();
+        
+        
 
     }
 
